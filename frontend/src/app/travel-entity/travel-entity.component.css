@@ -1,0 +1,28 @@
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form{
+    text-align: center;
+}
+
+.title{
+    font-family: "Roboto";
+    font-size: 30px;
+}
+
+.subtitle{
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+mat-form-field{
+    width: 300px;
+}
+
+button{
+    width: 100px;
+}

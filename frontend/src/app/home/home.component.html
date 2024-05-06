@@ -1,0 +1,11 @@
+<div class="container">
+    <form [formGroup]="destinationForm" (submit)="next()">
+        <p>Where are you planning to travel to?</p>
+        <mat-form-field>
+            <input matInput type="text" placeholder="Enter Your Destination" formControlName="destination">
+            <mat-error *ngIf="destinationForm?.get('destination')?.hasError('required')">Please enter a destination</mat-error>
+        </mat-form-field>
+        <br>
+        <button mat-flat-button type="submit" color="primary">Next</button>
+    </form>
+</div>

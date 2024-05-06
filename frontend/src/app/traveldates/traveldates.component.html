@@ -1,0 +1,16 @@
+<div class="container">
+    <form [formGroup]="travelDateForm" (submit)="next()">
+        <p class="title">Choose your travel dates</p>
+        <mat-form-field>
+            <mat-date-range-input [rangePicker]="picker" [min]="minDate">
+                <input matStartDate formControlName="startDate">
+                <input matEndDate formControlName="endDate">
+            </mat-date-range-input>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+            <mat-error *ngIf="travelDateForm.get('startDate')?.hasError('required')">Please select a date range</mat-error>
+        </mat-form-field>
+        <br>
+        <button mat-flat-button type="submit" color="primary">Next</button>
+    </form>
+</div>

@@ -1,0 +1,57 @@
+Generate a travel plan in the following example JSON format:
+{
+    "travelplan": [
+        {
+            "day": 1,
+            "activity": [
+                {
+                    "time": "",
+                    "task": "",
+                    "description": "",
+                    "link": "",
+                    "photo": ""
+                },
+                {
+                    "time": "",
+                    "task": "",
+                    "description": "",
+                    "link": "",
+                    "photo": ""
+                },
+                {
+                    "time": "",
+                    "task": "",
+                    "description": "",
+                    "link": "",
+                    "photo": ""
+                }
+            ]  
+        }...
+}
+
+Take into account the following details for the travel plan:
+- From: Singapore
+- Travel Destination: Japan
+- Travel Start Date: 4/12/2024
+- Travel End Date: 12/12/2024
+- Number of Travel Days: 9
+- People travelling: Couple
+- Flight Tickets Booked: No
+- Arrival Airport: Narita Airport
+- Arrival Time: 12.00PM
+- Return Airport: Narita Airport
+- Return Time: 1.00PM
+- Trip preference: temple, sightseeing, food, nightlife, anime
+- Total Budget per person: $1500-$2000 SGD
+- Preferred Mode of Transportation: Public Transport
+
+- Provide a travel plan for all the travel days specified above.
+- Provide specific places of interests and not just a general area to visit.
+- Provide specific dining options recommendations and not just a general area to find dining options.
+- Provide a specific timeline for each activity (e.g. 8.00AM)
+- Provide relevant description for each activity.
+- Provide relevant links to refer to for each activity, it can be a review site or the official site of the place of interest or dining option.
+- Provide relevant google image links for each activity if available, it should end with .jpg or .png.
+- First activity for the first day must be "Arrival to {Travel Destination}" and the last activity for the last day must be "Return to {From}".
+- Important: Take into account the arrival and return time to generate the travel plan if not null. Must adhere to the return time on travel end date, so do not generate more activities than required on the last day.
+- Important: Please use multiple reliable sources to generate this travel plan.

@@ -1,0 +1,13 @@
+<div class="container">
+    <form [formGroup]="travelEntityForm" (submit)="next()">
+        <p class="title">Choose your travel dates</p>
+        <mat-radio-group>
+            <mat-radio-button value="solo">Solo</mat-radio-button>
+            <mat-radio-button value="couple">Couple</mat-radio-button>
+            <mat-radio-button value="family">Family</mat-radio-button>
+            <mat-radio-button value="friends">Friends</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <button mat-flat-button type="submit" color="primary">Next</button>
+    </form>
+</div>
